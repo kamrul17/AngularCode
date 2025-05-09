@@ -9,9 +9,20 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   name:string|number="100"
-  handleClick(){
-    this.name="10";
-    console.log(`btn clicked${this.name}`);
+  handleClick(event:Event){
+    // this.name="10";
+    console.log(`btn clicked`);
+    // console.log((event.target as HTMLInputElement).value);
+    
+  }
+  handleInput(event:Event){
+
+    console.log((event.target as HTMLInputElement).value);
+    
+  }
+  onChange(e:Event){
+
+    console.log((e.target as HTMLSelectElement).value);
     
   }
 

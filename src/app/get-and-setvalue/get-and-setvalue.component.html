@@ -1,0 +1,19 @@
+<div>
+  <h1>Get And Set Value Example</h1>
+  <h1>{{ displayName }}</h1>
+  <input
+    type="text"
+    (input)="handleOnInput($event)"
+    placeholder="Enter user name"
+  />
+  <br />
+  <br />
+  <button (click)="getName()">Get Value</button>
+  <br />
+  <br />
+  <h1>{{ displayEmail }}</h1>
+  <input type="text" #EmailInput placeholder="Enter user Email" />
+  <br />
+  <br />
+  <button (click)="getEmail(EmailInput.value)">Get Value</button>
+</div>
