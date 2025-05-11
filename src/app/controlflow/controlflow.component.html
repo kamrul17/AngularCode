@@ -1,6 +1,6 @@
 <h1>controlflow works!</h1>
 <!-- <button (click)="handleBtn()">{{ display ? "hide" : "show" }}</button> -->
-<button (click)="handleDefaultBtn(3)">red btn</button>
+<!-- <button (click)="handleDefaultBtn(3)">red btn</button>
 <button (click)="handleDefaultBtn(2)">green btn</button>
 <button (click)="handleDefaultBtn(1)">blue btn</button>
 <button (click)="handleDefaultBtn(4)">default btn</button>
@@ -16,4 +16,19 @@
 <div class="rectangle-red"></div>
 } @else{
 <div class="rectangle-default"></div>
-}
+} -->
+<!-- @for (user of users; track user.name) {
+<div class="rectangle-default">
+  <h1>{{ user.name }}</h1>
+  <h2>{{ user.age }}</h2>
+</div> 
+} -->
+<div style="display: flex; gap: 10px">
+  @for (emp of employee; track emp.id) {
+  <div class="rectangle-default">
+    <h1>{{ emp.name }}</h1>
+    <h2>{{ emp.age }}</h2>
+    <h3>{{ emp.role }}</h3>
+  </div>
+  }
+</div>
