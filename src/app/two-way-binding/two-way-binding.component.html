@@ -1,0 +1,11 @@
+<p>two-way-binding works!</p>
+<!-- <h1>{{ name }}</h1>
+<input type="text" [(ngModel)]="name" /> -->
+<input type="text" [(ngModel)]="task" placeholder="Enter Your task" />
+<button (click)="addTask()">Add Task</button>
+
+@for (task of tasklist; track task.id) {
+<h1>{{ task.task }}</h1>
+<button (click)="deleteTask(task.id)">delete</button>
+<button (click)="editTask(task.id)">Edit</button>
+}

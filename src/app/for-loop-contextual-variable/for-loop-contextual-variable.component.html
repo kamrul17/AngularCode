@@ -1,0 +1,9 @@
+<p>for-loop-contextual-variable works!</p>
+
+@for (item of items; track item) { @if ($index%2==0) {
+<h1>item {{ $index }} == {{ item }}</h1>
+} @else {
+<h1 style="background-color: yellowgreen">item {{ $index }} == {{ item }}</h1>
+} } @empty {
+<h1>No record found</h1>
+}

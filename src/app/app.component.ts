@@ -7,11 +7,13 @@ import { GetAndSetvalueComponent } from './get-and-setvalue/get-and-setvalue.com
 import { CssstyleComponent } from './cssstyle/cssstyle.component';
 import { ControlflowComponent } from './controlflow/controlflow.component';
 import { SignalComponent } from './signal/signal.component';
+import { ForLoopContextualVariableComponent } from './for-loop-contextual-variable/for-loop-contextual-variable.component';
+import { TwoWayBindingComponent } from "./two-way-binding/two-way-binding.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LoginComponent,SignupComponent,ProfileComponent,CounterappComponent,GetAndSetvalueComponent,CssstyleComponent,ControlflowComponent,SignalComponent],
+  imports: [LoginComponent, SignupComponent, ProfileComponent, CounterappComponent, GetAndSetvalueComponent, CssstyleComponent, ControlflowComponent, SignalComponent, ForLoopContextualVariableComponent, TwoWayBindingComponent,TwoWayBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
